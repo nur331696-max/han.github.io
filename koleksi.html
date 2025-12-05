@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Kosmetik - Koleksi Terbaik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink-cream: #FDEEDC; 
+            --pink-soft: #F0A5AD;  
+            --dark-accent: #6C5B7B; 
+        }
+        .bg-pink-cream { background-color: var(--pink-cream); }
+        .bg-pink-soft { background-color: var(--pink-soft); }
+        .text-pink-soft { color: var(--pink-soft); }
+        .text-dark-accent { color: var(--dark-accent); }
+        .border-pink-soft { border-color: var(--pink-soft); }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-pink-cream min-h-screen flex flex-col">
+    
+   
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-dark-accent tracking-wider">Ian.</a>
+            
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-dark-accent hover:text-pink-soft">Beranda</a>
+                <a href="produk.html" class="text-dark-accent hover:text-pink-soft">Produk</a>
+                <a href="koleksi.html" class="text-dark-accent font-semibold text-pink-soft border-b-2 border-pink-soft pb-1">Koleksi Terbaik</a>
+                <a href="tentang_kami.html" class="text-dark-accent hover:text-pink-soft">Tentang Kami</a>
+                <a href="kontak.html" class="text-dark-accent hover:text-pink-soft">Kontak</a>
+            </nav>
+
+            <a href="keranjang.html" class="flex items-center space-x-2 text-dark-accent hover:text-pink-soft transition duration-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                <span class="hidden sm:inline">Keranjang</span>
+            </a>
+
+            <button id="mobile-menu-button" class="md:hidden text-dark-accent focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        
+        <nav id="mobile-menu" class="md:hidden hidden bg-white border-t border-pink-soft pb-2">
+            <a href="index.html" class="block px-4 py-2 text-dark-accent hover:bg-pink-cream">Beranda</a>
+            <a href="produk.html" class="block px-4 py-2 text-dark-accent hover:bg-pink-cream">Produk</a>
+            <a href="koleksi.html" class="block px-4 py-2 text-pink-soft font-semibold bg-pink-cream">Koleksi Terbaik</a>
+            <a href="tentang_kami.html" class="block px-4 py-2 text-dark-accent hover:bg-pink-cream">Tentang Kami</a>
+            <a href="kontak.html" class="block px-4 py-2 text-dark-accent hover:bg-pink-cream">Kontak</a>
+        </nav>
+    </header>
+    
+    
+    <main class="flex-grow py-12 md:py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-dark-accent mb-4 text-center">Koleksi Terbaik & Terlaris</h1>
+            <p class="text-center text-lg text-gray-700 mb-12">Paket makeup yang dicintai pelanggan. Hemat dan cantik maksimal!</p>
+            
+            
+            <div class="mb-16 p-6 md:p-10 bg-white rounded-2xl shadow-xl border-l-8 border-pink-soft flex flex-col lg:flex-row items-center gap-8">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-pink-soft mb-3">The Everyday Soft Look Set</h2>
+                    <p class="text-gray-700 mb-4">Set lengkap untuk tampilan sehari-hari yang ringan dan natural. Wajib punya!</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6">
+                        <li>Lip Cream Matte (Shade Pink Blossom)</li>
+                        <li>Blush On Cream (Warna Soft Pink)</li>
+                        <li>Daily Liquid Foundation (Pilih Shade)</li>
+                        <li>Cleansing Oil/Spray</li>
+                        <li>Bedak tabur (Loose Powder)</li>
+                        <li>Bedak padat (Pressed Powder)</li>
+                        <li>Eyeshadow Palette 9 Warna (Tema Glamour)</li>
+                        <li>GRATIS: Pouch Kosmetik Cantik</li>
+                    </ul>
+                    <div class="flex items-center space-x-4 mb-6">
+                        <span class="text-xl text-gray-500 line-through">Rp 350.000</span>
+                        <span class="text-4xl font-extrabold text-dark-accent">Rp 1.299.000</span>
+                    </div>
+                    <a href="keranjang.html" class="inline-block bg-pink-soft text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transition duration-300">
+                        Pesan Sekarang
+                    </a>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="h-64 bg-pink-cream rounded-xl flex items-center justify-center text-dark-accent font-bold text-xl">
+                        <img src="https://i.pinimg.com/1200x/af/61/e4/af61e41fa4ac5458065655088f2767b8.jpg" alt="Foto produk Glam Night Out Collection" class="w-full h-80 bg-gray-200 rounded-lg">
+
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="p-6 md:p-10 bg-white rounded-2xl shadow-xl border-r-8 border-dark-accent flex flex-col lg:flex-row-reverse items-center gap-8">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-dark-accent mb-3">Glam Night Out Collection</h2>
+                    <p class="text-gray-700 mb-4">Tampilan dramatis dengan kilau premium. Sempurna untuk acara malam.</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6">
+                        <li>Eyeshadow Palette 4 Warna (Tema Glamour)</li>
+                        <li>Diamond Highlighter Stick</li>
+                        <li>Beauty Wands</li>
+                        <li>Lipstik</li>
+                        <li>Produk Compact/Jars Kecil</li>
+                        <li>Diskon Tambahan 10%</li>
+                    </ul>
+                    <div class="flex items-center space-x-4 mb-6">
+                        <span class="text-xl text-gray-500 line-through">Rp 2.420.000</span>
+                        <span class="text-4xl font-extrabold text-pink-soft">Rp 1.378.000</span>
+                    </div>
+                    <a href="keranjang.html" class="inline-block bg-pink-soft-accent text-pink-soft font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transition duration-300">
+                        Lihat Detail & Beli
+                    </a>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="h-64 bg-pink-cream rounded-xl flex items-center justify-center text-dark-accent font-bold text-xl">
+                        <img src="https://i.pinimg.com/736x/37/ff/2e/37ff2e3133f2e7245eb823ad762a9745.jpg" alt="Foto produk Glam Night Out Collection" class="w-full h-80 bg-gray-200 rounded-lg">
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    
+    
+    <footer class="w-full mt-3 bg-pink soft-500 text-white py-2 rounded-full text-sm hover:bg-opacity-90 transition transform hover:scale-[1.03]">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Ian Kosmetik. Semua Hak Dilindungi.</p>
+            <div class="flex justify-center space-x-4 mt-3">
+                <a href="tentang_kami.html" class="text-sm hover:text-pink-soft transition">Ketentuan Layanan</a>
+                <span class="text-sm">|</span>
+                <a href="kontak.html" class="text-sm hover:text-pink-soft transition">Kebijakan Privasi</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
